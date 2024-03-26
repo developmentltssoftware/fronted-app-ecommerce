@@ -43,61 +43,6 @@ export const Test: React.FC = () => {
       valueProduct={0} nameProduct={"Pizza"} /> */}
 
       <HeaderBlack />
-      <OrderOfProductClient
-        isOpen={isOpen}
-        onClose={onClose}
-        onOpen={onOpen}
-        children={[
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Fanta Laranja Lata"}
-            costProduct={8.99}
-            imageProduct={fanta_laranja}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Sprit Lata"}
-            costProduct={5.3}
-            imageProduct={sprit}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Fanta Laranja Lata"}
-            costProduct={8.99}
-            imageProduct={fanta_laranja}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Sprit Lata"}
-            costProduct={5.3}
-            imageProduct={sprit}
-          />,
-        ]}
-      />
       <ListBebidas />
       <ListPizza />
       <FooterHeader />

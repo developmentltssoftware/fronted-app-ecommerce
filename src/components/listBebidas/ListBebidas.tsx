@@ -13,8 +13,8 @@ export const ListBebidas: React.FC = () => {
         top={{ xl: 80, lg: 60, md: 60, sm: 20, base: 20 }}
         mt={{ xl: 80, lg: 80, md: 80, sm: "none", base: "none" }}
         left={{
-          xl: "-100px",
-          lg: "-15px",
+          xl: "-245px",
+          lg: "-200px",
           md: "-10px",
           sm: "0px",
           base: "0px",
