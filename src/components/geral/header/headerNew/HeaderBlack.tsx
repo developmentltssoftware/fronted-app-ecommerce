@@ -1,4 +1,4 @@
-import { Flex, useDisclosure } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { CiDiscount1 } from "react-icons/ci";
 import { IoHome, IoBagHandle } from "react-icons/io5";
@@ -13,7 +13,8 @@ import { CardSmallOrderProduct } from "../../CardSmallOrderProduct";
 import coca from "../../../../assets/img/coca.jpg";
 import fanta_laranja from "../../../../assets/img/fanta_laranja.jpg";
 import sprit from "../../../../assets/img/SPRITE_LATA.jpg";
-import { OrderOfProductClient } from "../../OrderOfProductClient";
+import { FlexBag } from "../../comanda/FlexBag";
+
 const names = [
   {
     color: "#ffffff",
@@ -41,7 +42,6 @@ const names = [
   },
 ];
 export const HeaderBlack: React.FC = () => {
-  const { isOpen, onClose, onOpen } = useDisclosure();
   return (
     <Flex
       // father of everybody element
@@ -94,61 +94,6 @@ export const HeaderBlack: React.FC = () => {
       <HeaderNew />
       <FlexLogoSmall />
       <FlexSelect />
-      <OrderOfProductClient
-        isOpen={true}
-        onClose={onClose}
-        onOpen={onOpen}
-        children={[
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Fanta Laranja Lata"}
-            costProduct={8.99}
-            imageProduct={fanta_laranja}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Sprit Lata"}
-            costProduct={5.3}
-            imageProduct={sprit}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Coca cola"}
-            costProduct={8.99}
-            imageProduct={coca}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Fanta Laranja Lata"}
-            costProduct={8.99}
-            imageProduct={fanta_laranja}
-          />,
-          <CardSmallOrderProduct
-            quantity={3}
-            nameProduct={"Sprit Lata"}
-            costProduct={5.3}
-            imageProduct={sprit}
-          />,
-        ]}
-      />
     </Flex>
   );
 };

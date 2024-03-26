@@ -16,6 +16,7 @@ import { FlexLogo } from "../components/geral/header/headerNew/FlexLogo";
 import { HeaderNew } from "../components/geral/header/headerNew/HeaderNew";
 import { HeaderBlack } from "../components/geral/header/headerNew/HeaderBlack";
 import { useState } from "react";
+import { FlexBag } from "../components/geral/comanda/FlexBag";
 export const Test: React.FC = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
   return (
@@ -23,7 +24,7 @@ export const Test: React.FC = () => {
       flexDirection={"column"}
       w={"100vw"}
       minH={"auto"}
-      h={"350vh"}
+      h={"content"}
       alignContent={"center"}
       align={"center"}
       justifyContent={"space-between"}
@@ -43,6 +44,65 @@ export const Test: React.FC = () => {
       valueProduct={0} nameProduct={"Pizza"} /> */}
 
       <HeaderBlack />
+      <Flex
+        pos={"sticky"}
+        top={"0px"}
+        left={'1000px'}
+      >
+        <FlexBag
+          children={[
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Coca cola"}
+              costProduct={8.99}
+              imageProduct={coca}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Coca cola"}
+              costProduct={8.99}
+              imageProduct={coca}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Coca cola"}
+              costProduct={8.99}
+              imageProduct={coca}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Fanta Laranja Lata"}
+              costProduct={8.99}
+              imageProduct={fanta_laranja}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Sprit Lata"}
+              costProduct={5.3}
+              imageProduct={sprit}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Coca cola"}
+              costProduct={8.99}
+              imageProduct={coca}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Fanta Laranja Lata"}
+              costProduct={8.99}
+              imageProduct={fanta_laranja}
+            />,
+            <CardSmallOrderProduct
+              quantity={3}
+              nameProduct={"Sprit Lata"}
+              costProduct={5.3}
+              imageProduct={sprit}
+            />,
+          ]}
+          bagEmpty={true}
+        />
+      </Flex>
       <ListBebidas />
       <ListPizza />
       <FooterHeader />

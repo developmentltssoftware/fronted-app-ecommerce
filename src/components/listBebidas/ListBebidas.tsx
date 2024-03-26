@@ -9,17 +9,14 @@ export const ListBebidas: React.FC = () => {
       <Flex
         flexDirection={"column"}
         gap={2}
-        pos={"relative"}
-        top={{ xl: 80, lg: 60, md: 60, sm: 20, base: 20 }}
-        mt={{ xl: 80, lg: 80, md: 80, sm: "none", base: "none" }}
-        left={{
-          xl: "-245px",
-          lg: "-200px",
-          md: "-10px",
-          sm: "0px",
-          base: "0px",
-        }}
-        p={4}
+        pos={"static"}
+        mt={{ xl: 40, lg: 40, md: 80, sm: "none", base: "none" }}
+        marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
+        marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
+        p={2}
+        //border={'1px solid red'}
+        //w={'100%'}
+        w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", xl: "1200px" }}
       >
         {/* os tipos devem vir da API*/}
         <Text fontWeight={600} fontSize={"24px"}>
@@ -28,8 +25,8 @@ export const ListBebidas: React.FC = () => {
         <Flex
           flexDirection={"row"}
           align={"center"}
-          justify={"center"}
-          gap={1}
+          //justify={"left"}
+          gap={2}
           display={"grid"}
           gridTemplateColumns={{
             xl: "1fr 1fr",
@@ -39,6 +36,8 @@ export const ListBebidas: React.FC = () => {
             xs: "1fr",
             base: "1fr",
           }}
+          //border={'1px solid green'}
+          w={{xl:'fit-content', lg: 'fit-content'}}
         >
           {typeBebidas.map((name, index) => (
             <CardMain

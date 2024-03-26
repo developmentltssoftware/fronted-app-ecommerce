@@ -9,19 +9,14 @@ export const ListPizza: React.FC = () => {
       <Flex
         flexDirection={"column"}
         gap={2}
-        pos={"relative"}
-        top={{ xl: 0, lg: 0, md: 0, sm: 0, base: 0 }}
-        mt={{ xl: 80, lg: 80, md: 80, sm: 12, base: 12 }}
-        p={4}
+        pos={"static"}
+        //top={{ xl: 0, lg: 0, md: 0, sm: 0, base: 0 }}
+        mt={{ xl: 10, lg: 10, md: 10, sm: 12, base: 12 }}
+        p={1}
         mb={20}
-        left={{
-          xl: "-100px",
-          lg: "-15px",
-          md: "-10px",
-          sm: "0px",
-          base: "0px",
-        }}
-        //left={{ xl: -40, lg: -40 }}
+        marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
+        marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
+        w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", xl: "1200px" }}
       >
         {/* os tipos devem vir da API*/}
         <Text fontWeight={600} fontSize={"24px"}>
@@ -31,7 +26,7 @@ export const ListPizza: React.FC = () => {
           flexDirection={"row"}
           align={"center"}
           justify={"center"}
-          gap={1}
+          gap={2}
           display={"grid"}
           gridTemplateColumns={{
             xl: "1fr 1fr",
@@ -41,6 +36,7 @@ export const ListPizza: React.FC = () => {
             xs: "1fr",
             base: "1fr",
           }}
+          w={{ xl: "fit-content", lg: "fit-content" }}
         >
           {typePizza.map((name, index) => (
             <>

@@ -29,7 +29,8 @@ export const CardMain: React.FC<ICardProps> = (props: ICardProps) => {
         cursor: "pointer",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
       }}
-      maxW={'350px'}
+      maxW={{xl:'430px',lg:'430px', md:'350px'}}
+      //border={'1px solid red'}
     >
       <CardBody w={{ base: "400px" }}>
         <Heading size="xs">{props.textHeading}</Heading>

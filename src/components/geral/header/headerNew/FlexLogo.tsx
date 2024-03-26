@@ -24,13 +24,8 @@ export const FlexLogo: React.FC<IFlexLogo> = () => {
           sm: "none",
           base: "none",
         }}
-        left={{
-          xl: "-120px",
-          lg: "-120px",
-          md: "-50px",
-          sm: "-20px",
-          base: "-20px",
-        }}
+        marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
+        marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
       >
         <Flex
           pos={"absolute"}
@@ -63,6 +58,7 @@ export const FlexLogo: React.FC<IFlexLogo> = () => {
             sm: "110px",
             base: "110px",
           }}
+          
           bottom={{
             xl: "20px",
             lg: "20px",
