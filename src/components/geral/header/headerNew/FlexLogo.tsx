@@ -3,6 +3,7 @@ import React from "react";
 import metanoia_logo from "../../../../assets/img/metanoia.jpg";
 import { GoDotFill } from "react-icons/go";
 import { BsGeoAltFill } from "react-icons/bs";
+import { FlexSelect } from "../FlexSelect";
 interface IFlexLogo extends FlexProps {}
 export const FlexLogo: React.FC<IFlexLogo> = () => {
   return (
@@ -24,8 +25,20 @@ export const FlexLogo: React.FC<IFlexLogo> = () => {
           sm: "none",
           base: "none",
         }}
-        marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
-        marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
+        marginRight={{
+          xl: "auto",
+          lg: "auto",
+          md: "auto",
+          sm: "auto",
+          base: "auto",
+        }}
+        marginLeft={{
+          xl: "auto",
+          lg: "auto",
+          md: "auto",
+          sm: "auto",
+          base: "auto",
+        }}
       >
         <Flex
           pos={"absolute"}
@@ -58,7 +71,6 @@ export const FlexLogo: React.FC<IFlexLogo> = () => {
             sm: "110px",
             base: "110px",
           }}
-          
           bottom={{
             xl: "20px",
             lg: "20px",

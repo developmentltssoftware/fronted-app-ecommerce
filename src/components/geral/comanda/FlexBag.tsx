@@ -23,6 +23,7 @@ export const FlexBag: React.FC<IFlexBag> = ({
         bgColor="#f4f5f2"
         borderRadius="md"
         boxShadow="md"
+        
       >
         <Flex w="100%" h="50px">
           <Button
@@ -56,7 +57,7 @@ export const FlexBag: React.FC<IFlexBag> = ({
         <Flex
           align="center"
           overflowY="auto"
-          maxH="350px"
+          maxH="200px"
           flexDirection="column"
         >
           {!bagEmpty ? (

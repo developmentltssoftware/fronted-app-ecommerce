@@ -1,9 +1,9 @@
 import { Flex, Text } from "@chakra-ui/react";
-import { typePastel } from "../types/image.type";
+import { typeHamburguer } from "../types/image.type";
 import { CardMain } from "../geral/cardMain/CardMain";
 // a API deve retornar uma lista de bebidas contendo para cada uma
 // nome, preço, descrição e imagem
-export const ListPastel: React.FC = () => {
+export const ListHumburger: React.FC = () => {
   return (
     <>
       <Flex
@@ -19,7 +19,7 @@ export const ListPastel: React.FC = () => {
       >
         {/* os tipos devem vir da API*/}
         <Text fontWeight={600} fontSize={"24px"}>
-          Pastéis
+          Humbúrgueres
         </Text>
         <Flex
           flexDirection={"row"}
@@ -36,7 +36,7 @@ export const ListPastel: React.FC = () => {
           }}
           w={{ xl: "fit-content", lg: "fit-content" }}
         >
-          {typePastel.map((name, index) => (
+          {typeHamburguer.map((name, index) => (
             <>
               <CardMain
                 key={index}

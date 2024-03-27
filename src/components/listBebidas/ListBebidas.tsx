@@ -10,10 +10,10 @@ export const ListBebidas: React.FC = () => {
         flexDirection={"column"}
         gap={2}
         pos={"static"}
-        mt={{ xl: 40, lg: 40, md: 80, sm: "none", base: "none" }}
+        mt={{ xl: -350, lg: -350, md: -180, sm: -350, base: -350 }}
         marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
         marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
-        p={2}
+        p={1}
         //border={'1px solid red'}
         //w={'100%'}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", xl: "1200px" }}

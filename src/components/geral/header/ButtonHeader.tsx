@@ -21,7 +21,7 @@ export const ButtonHeader: React.FC<IButtonProps> = (props: IButtonProps) => {
       colorScheme={props.colorScheme}
       backgroundColor={props.backgroundColor}
       _hover={props._hover}
-      border={"1px solid white"}
+      border={props.border ? props.border : "1px solid white"}
     >
       {props.nameButton ? props.nameButton : ""}
     </Button>

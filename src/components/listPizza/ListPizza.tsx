@@ -11,7 +11,7 @@ export const ListPizza: React.FC = () => {
         gap={2}
         pos={"static"}
         //top={{ xl: 0, lg: 0, md: 0, sm: 0, base: 0 }}
-        mt={{ xl: 10, lg: 10, md: 10, sm: 12, base: 12 }}
+        mt={{ xl: 0, lg: 0, md: 0, sm: 2, base: 2 }}
         p={1}
         mb={20}
         marginRight={{ xl: "auto", lg: "auto", md: "auto" }}

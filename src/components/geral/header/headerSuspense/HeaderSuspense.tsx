@@ -9,6 +9,8 @@ export const HeaderSuspense: React.FC<FlexProps> = (props: IHeaderProps) => {
   return (
     <Flex
       flexDirection={"row"}
+      position={"fixed"}
+      zIndex={1}
       gap={2}
       justifyContent={"space-around"}
       align={"center"}
@@ -16,9 +18,11 @@ export const HeaderSuspense: React.FC<FlexProps> = (props: IHeaderProps) => {
       width={"100%"}
       p={2}
       m={0}
-      pos={props.position ? props.position : undefined}
       bottom={props.bottom}
       display={props.display}
+      opacity={props.opacity} // A opacidade será controlada por CSS
+      //transition="top 1.5s linear"
+      transition={"opacity 1s ease-out"}
       bgColor={"#fff"}
     >
       <Flex align={"center"} gap={2}>

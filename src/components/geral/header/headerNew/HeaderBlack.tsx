@@ -79,6 +79,7 @@ export const HeaderBlack: React.FC = () => {
               color={name.color}
               backgroundColor={"#000000"}
               variant={name.variant}
+              border={'none'}
               _hover={{
                 border: "1px solid #ffffff",
                 backgroundColor: "transparent",
@@ -93,7 +94,7 @@ export const HeaderBlack: React.FC = () => {
       <ImageMain />
       <HeaderNew />
       <FlexLogoSmall />
-      <FlexSelect />
+      
     </Flex>
   );
 };

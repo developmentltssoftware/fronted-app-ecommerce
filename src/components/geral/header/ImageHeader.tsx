@@ -1,5 +1,5 @@
 import { ImageProps, Image } from "@chakra-ui/react"
-import avatar  from "../../../assets/img/avatar.png";
+import metanoia  from "../../../assets/img/metanoia.jpg";
 interface IImageProps extends ImageProps{
     label: string;
 }
@@ -8,7 +8,7 @@ export const ImageHeader: React.FC<IImageProps> = (props: IImageProps) => {
       <Image
         borderRadius={20}
         boxSize={35}
-        src={`${avatar}`}
+        src={`${metanoia}`}
         alt={props.src ? props.src : 'image_perfil'}
       />
     );
