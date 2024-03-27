@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { IAuthProvider, IContext, IDecodedToken, IUser } from "./types";
 import { LoginRequest, getUserLocalStorage, setUserLocalStorage } from "./util";
 import {jwtDecode} from "jwt-decode";
-import { api } from "../../../services/api";
+import api from "../../../services/api";
 import { AxiosResponse } from "axios";
 
 
