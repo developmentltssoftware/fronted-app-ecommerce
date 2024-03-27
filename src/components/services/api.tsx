@@ -2,7 +2,7 @@ import axios from "axios";
 import { env } from "../../env";
 import { getUserLocalStorage } from "../auth/context/AuthProvider/util";
 
-export const api = axios.create({
+const api = axios.create({
   baseURL: env.VITE_APP_API_URL,
 });
 
@@ -19,3 +19,4 @@ api.interceptors.request.use(
   }
 );
 
+export default api;
