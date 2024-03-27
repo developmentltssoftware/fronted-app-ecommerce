@@ -33,6 +33,7 @@
     "react-visibility-sensor": "^5.1.1",
     "sassy-datepicker": "^0.10.2",
     "text-marshal": "^0.0.2",
+    "validator": "^13.11.0",
     "web-push": "^3.6.3",
     "zod": "^3.22.4"
   },
