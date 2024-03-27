@@ -3,12 +3,13 @@ import {
   ReactNode,
   useCallback,
   useContext,
+  useEffect,
   useState,
 } from "react";
 
 import { ProductType } from "../types/product.type";
 import { UserType, UserTypeContext } from "../types/user.type";
-import { api } from "../services/api";
+import api from "../services/api";
 
 // create the context
 const ContextUser = createContext<UserTypeContext | undefined>(undefined);
@@ -30,7 +31,9 @@ export const ContextProductsProvider: React.FC<{
   const [dataUser, setdataUser] = useState<ProductType>(
     {} as ProductType
   );
+    useEffect (() =>{
 
+    },[dataUser])
   const createOneUser = useCallback(async (data: UserType) => {
     try {
       await api.post(`/users/`, data);

@@ -8,7 +8,8 @@ import {
 } from "react";
 
 import { ProductType, ProductTypeContext } from "../types/product.type";
-import { api } from "../services/api";
+import api from "../services/api";
+import { AxiosResponse } from "axios";
 
 // create the context
 const ContextProducts = createContext<ProductTypeContext | undefined>(
@@ -36,14 +37,14 @@ export const ContextProductsProvider: React.FC<{
       // Buscar os dados da API e definir usando setGrandeOperacaoData
       api
         .get(`/product/${idProduct}`)
-        .then((response) => {
+        .then((response: AxiosResponse) => {
           setIdProduct(response.data);
         })
-        .catch((error) => {
+        .catch((error: Error) => {
           console.error("Erro ao buscar por product", error);
         });
     }
-  }, [idProduct]);
+  }, [idProduct, dataProduct]);
   
 
   const createOneProduct = useCallback(async (data: ProductType) => {

@@ -8,7 +8,7 @@ import {
 } from "react";
 
 import { BagContext, BagType } from "../types/bag.type";
-import { api } from "../services/api";
+import api from "../services/api";
 
 // create the context
 const ContextBag = createContext<BagContext | undefined>(undefined);
@@ -17,7 +17,7 @@ export const useContextBag = () => {
   const context = useContext(ContextBag);
   if (context === undefined) {
     throw new Error(
-      "useGrandeOperacao deve ser usado dentro de um GrandeOperacaoProvider"
+      "deve ser usado dentro de um GrandeOperacaoProvider"
     );
   }
   return context;
@@ -41,7 +41,7 @@ export const ContextBagProvider: React.FC<{
           console.error("Erro ao buscar por product", error);
         });
     }
-  }, [idBag]);
+  }, [idBag, dataBag]);
 
   const addOneProductInBag = useCallback(async (data: BagType) => {
     try {
