@@ -1,3 +1,7 @@
+import { CiDiscount1 } from "react-icons/ci";
+import { IoHome, IoBagHandle } from "react-icons/io5";
+import { BsPersonFillCheck } from "react-icons/bs";
+
 export const optionslabels = [
   { label: "Pastéis", value: "pasteis" },
   { label: "Salgados", value: "salgados" },
@@ -105,4 +109,58 @@ export const opcionaisPasteis: { name: string, value: number }[] = [
   { name: "Cebola", value: 1.00 },
   { name: "Azeitonas", value: 1.00 },
   { name: "Pimentão", value: 1.25 },
+];
+export const names = [
+  {
+    color: "#000000",
+    nameButton: "Início",
+    icon: <IoHome size={ 20} />,
+  variant: "outline",
+  flagNameButton: true,
+  },
+{
+  color: "#000000",
+    nameButton: "Promoções",
+      icon: <CiDiscount1 size={ 20 } />,
+  variant: "outline",
+    flagNameButton: true,
+  },
+{
+  color: "#000000",
+    nameButton: "Pedidos",
+      icon: <IoBagHandle size={ 20 } />,
+  variant: "outline",
+    flagNameButton: true,
+  },
+];
+
+export const namesFooter = [
+  {
+    color: "#000000",
+    nameButton: "Início",
+    icon: <IoHome size={20} />,
+    variant: "outline",
+    flagNameButton: true,
+  },
+  {
+    color: "#000000",
+    nameButton: "Promoções",
+    icon: <CiDiscount1 size={20} />,
+    variant: "outline",
+    flagNameButton: true,
+  },
+  {
+    color: "#000000",
+    nameButton: "Pedidos",
+    icon: <IoBagHandle size={20} />,
+    variant: "outline",
+    flagNameButton: true,
+  },
+  {
+    color: "#000000",
+    nameButton: "Perfil",
+    icon: <BsPersonFillCheck size={20} />,
+    variant: "outline",
+    flagNameButton: true,
+  },
 ];

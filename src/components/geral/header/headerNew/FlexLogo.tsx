@@ -3,7 +3,6 @@ import React from "react";
 import metanoia_logo from "../../../../assets/img/metanoia.jpg";
 import { GoDotFill } from "react-icons/go";
 import { BsGeoAltFill } from "react-icons/bs";
-import { FlexSelect } from "../FlexSelect";
 interface IFlexLogo extends FlexProps {}
 export const FlexLogo: React.FC<IFlexLogo> = () => {
   return (

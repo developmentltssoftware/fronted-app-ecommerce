@@ -3,6 +3,7 @@ import { IAuthProvider, IContext, IDecodedToken, IUser } from "./types";
 import { LoginRequest, getUserLocalStorage, setUserLocalStorage } from "./util";
 import {jwtDecode} from "jwt-decode";
 import { api } from "../../../services/api";
+import { AxiosResponse } from "axios";
 
 
 export const AuthContext = createContext<IContext>({} as IContext);
@@ -29,7 +30,7 @@ export const AuthProvider = ({ children }: IAuthProvider) => {
   }
 
   api.interceptors.response.use(
-    (response) => {
+    (response: AxiosResponse) => {
       return response;
     },
     async (error) => {

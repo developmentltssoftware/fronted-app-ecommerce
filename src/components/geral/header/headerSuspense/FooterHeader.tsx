@@ -1,41 +1,11 @@
 import { ButtonProps, Flex } from "@chakra-ui/react";
 import { ButtonHeader } from "../ButtonHeader";
-import { CiDiscount1 } from "react-icons/ci";
-import { IoHome, IoBagHandle } from "react-icons/io5";
-import { BsPersonFillCheck } from "react-icons/bs";
+import { namesFooter } from "../../../types/constants";
+
 interface IButtons extends ButtonProps {
   flagNameButton?: boolean;
 }
-export const names = [
-  {
-    color: "#000000",
-    nameButton: "Início",
-    icon: <IoHome size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-  {
-    color: "#000000",
-    nameButton: "Promoções",
-    icon: <CiDiscount1 size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-  {
-    color: "#000000",
-    nameButton: "Pedidos",
-    icon: <IoBagHandle size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-  {
-    color: "#000000",
-    nameButton: "Perfil",
-    icon: <BsPersonFillCheck size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-];
+
 export const FooterHeader: React.FC<IButtons> = () => {
   return (
     <>
@@ -49,7 +19,7 @@ export const FooterHeader: React.FC<IButtons> = () => {
         pos={"fixed"}
         bottom={0}
       >
-        {names.map((name, index) => (
+        {namesFooter.map((name, index) => (
           <Flex
             key={index}
             align={"center"}

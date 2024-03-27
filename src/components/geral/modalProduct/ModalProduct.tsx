@@ -18,7 +18,7 @@ import { ImageModal } from "./ImageModal";
 import { ListOptionsOfProduct } from "./ListOptionsOfProduct";
 import { CardTitleOfProduct } from "./CardTitleOfProduct";
 import { ButtonIncrement } from "../ButtonIncrement";
-import { TypeOfProduct, typeButton } from "../constants";
+import { TypeOfProduct, typeButton } from "../../types/constants";
 interface IModalProductProps extends ModalProps {
   isOpen: boolean;
   onClose: () => void;

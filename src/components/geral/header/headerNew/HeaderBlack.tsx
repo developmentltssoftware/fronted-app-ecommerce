@@ -7,13 +7,7 @@ import { ButtonHeader } from "../ButtonHeader";
 import pizzaria from "../../../../assets/img/pizza-nice.jpg";
 import { ImageMain } from "./ImageMain";
 import { HeaderNew } from "./HeaderNew";
-import { FlexSelect } from "../FlexSelect";
 import { FlexLogoSmall } from "./FlexLogoSmall";
-import { CardSmallOrderProduct } from "../../CardSmallOrderProduct";
-import coca from "../../../../assets/img/coca.jpg";
-import fanta_laranja from "../../../../assets/img/fanta_laranja.jpg";
-import sprit from "../../../../assets/img/SPRITE_LATA.jpg";
-import { FlexBag } from "../../comanda/FlexBag";
 
 const names = [
   {

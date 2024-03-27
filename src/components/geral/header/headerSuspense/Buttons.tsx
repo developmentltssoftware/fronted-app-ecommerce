@@ -1,32 +1,10 @@
 import { ButtonProps, Flex } from "@chakra-ui/react";
 import React from "react";
-import { CiDiscount1 } from "react-icons/ci";
-import { IoHome, IoBagHandle } from "react-icons/io5";
+
 import { InputSearch } from "../../InputSearch";
 import { ButtonHeader } from "../ButtonHeader";
-export const names = [
-  {
-    color: "#000000",
-    nameButton: "Início",
-    icon: <IoHome size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-  {
-    color: "#000000",
-    nameButton: "Promoções",
-    icon: <CiDiscount1 size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-  {
-    color: "#000000",
-    nameButton: "Pedidos",
-    icon: <IoBagHandle size={20} />,
-    variant: "outline",
-    flagNameButton: true,
-  },
-];
+import { names } from "../../../types/constants";
+
 interface IButtons extends ButtonProps {
   flagNameButton?: boolean;
 }

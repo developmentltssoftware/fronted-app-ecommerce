@@ -9,15 +9,15 @@ import {
   StackDivider,
   Text,
 } from "@chakra-ui/react";
+
+import { ButtonIncrement } from "../ButtonIncrement";
 import {
   TypeOfProduct,
-  opcionaisHamburgueres,
   opcionaisPasteis,
+  opcionaisHamburgueres,
   opcionaisPizzas,
   typeButton,
-} from "../constants";
-import { ButtonIncrement } from "../ButtonIncrement";
-
+} from "../../types/constants";
 
 interface IListProps extends CardProps {
   heading?: string;
@@ -59,15 +59,15 @@ export const ListOptionsOfProduct: React.FC<IListProps> = (
           _active={{
             backgroundColor: "#f4f5f7",
           }}
-          pos={'sticky'}
-          top={'135px'}
+          pos={"sticky"}
+          top={"135px"}
         >
           <CardBody>
             <Stack
               divider={<StackDivider />}
               flexDirection={"row"}
               align={"center"}
-              h={'30px'}
+              h={"30px"}
             >
               <Box w={"100%"}>
                 <Heading
@@ -78,9 +78,7 @@ export const ListOptionsOfProduct: React.FC<IListProps> = (
                   ADICIONAL {name.name.toUpperCase()}
                 </Heading>
                 <Flex align={"center"} justify={"space-between"}>
-                  <Text fontSize="sm">
-                    +R$ {name.value}
-                  </Text>
+                  <Text fontSize="sm">+R$ {name.value}</Text>
                   <ButtonIncrement
                     types={typeButton.secondary}
                     value={0}

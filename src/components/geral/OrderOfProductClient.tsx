@@ -33,9 +33,9 @@ export const OrderOfProductClient: React.FC<IOrderProps> = ({
   const bagEmpty = true;
   return (
     <>
-      {/* <Button onClick={onOpen} w={"fit-content"}>
+      <Button onClick={onOpen} w={"fit-content"}>
         Open Modal
-      </Button> */}
+      </Button>
       <Flex pos={'sticky'} top={-20} right={-10}>
         <Modal
           isCentered
@@ -44,7 +44,7 @@ export const OrderOfProductClient: React.FC<IOrderProps> = ({
           motionPreset="slideInBottom"
           size={"xl"}
         >
-          {/* <ModalOverlay /> */}
+          <ModalOverlay />
           <ModalContent
             w={"350px"}
             minH={"400px"}
