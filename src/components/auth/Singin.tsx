@@ -49,8 +49,8 @@ export const Singin: React.FC<IFormInputs> = () => {
           isClosable: true,
           position: "top-right",
         });
-        setLoading(!loading);
-        navigate('/test')
+      setLoading(!loading);
+      navigate("/test");
       reset();
     } catch (err) {
       toast({
@@ -64,8 +64,8 @@ export const Singin: React.FC<IFormInputs> = () => {
       setLoading(false);
     } finally {
       setLoading(false);
-      navigate('/')
-    }   
+      navigate("/");
+    }
   };
   // mask passada para o input
   const maskInput = useCallback((e: React.FormEvent<HTMLInputElement>) => {
