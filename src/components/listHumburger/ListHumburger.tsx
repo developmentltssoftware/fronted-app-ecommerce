@@ -31,7 +31,8 @@ export const ListHumburger: React.FC = () => {
             xl: "1fr 1fr",
             lg: "1fr 1fr",
             md: "1fr 1fr",
-            sm: "1fr",
+            sm: "1fr 1fr",
+            xs: "1fr",
             base: "1fr",
           }}
           w={{ xl: "fit-content", lg: "fit-content" }}

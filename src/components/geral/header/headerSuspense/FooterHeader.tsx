@@ -38,6 +38,7 @@ export const FooterHeader: React.FC<IButtons> = () => {
               color={name.color}
               variant={name.variant}
               _hover={{ borderColor: "#000" }}
+              route={name.route}
             />
           </Flex>
         ))}

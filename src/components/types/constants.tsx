@@ -112,25 +112,32 @@ export const opcionaisPasteis: { name: string, value: number }[] = [
 ];
 export const names = [
   {
-    color: "#000000",
+    color: "#ffffff",
     nameButton: "Início",
-    icon: <IoHome size={ 20} />,
-  variant: "outline",
-  flagNameButton: true,
+    icon: <IoHome size={20} />,
+    variant: "ghost",
+    route: "/",
   },
-{
-  color: "#000000",
+  {
+    color: "#ffffff",
     nameButton: "Promoções",
-      icon: <CiDiscount1 size={ 20 } />,
-  variant: "outline",
-    flagNameButton: true,
+    icon: <CiDiscount1 size={20} />,
+    variant: "ghost",
+    route: "/promocoes",
   },
-{
-  color: "#000000",
+  {
+    color: "#ffffff",
     nameButton: "Pedidos",
-      icon: <IoBagHandle size={ 20 } />,
-  variant: "outline",
-    flagNameButton: true,
+    icon: <IoBagHandle size={20} />,
+    variant: "ghost",
+    route: "/pedidos",
+  },
+  {
+    color: "#ffffff",
+    nameButton: "Entrar/Cadastrar",
+    icon: <BsPersonFillCheck size={20} />,
+    variant: "ghost",
+    route: "/login",
   },
 ];
 
@@ -141,6 +148,7 @@ export const namesFooter = [
     icon: <IoHome size={20} />,
     variant: "outline",
     flagNameButton: true,
+    route: '/'
   },
   {
     color: "#000000",
@@ -148,6 +156,7 @@ export const namesFooter = [
     icon: <CiDiscount1 size={20} />,
     variant: "outline",
     flagNameButton: true,
+    route: '/promocoes'
   },
   {
     color: "#000000",
@@ -155,6 +164,7 @@ export const namesFooter = [
     icon: <IoBagHandle size={20} />,
     variant: "outline",
     flagNameButton: true,
+    route: '/pedidos'
   },
   {
     color: "#000000",
@@ -162,5 +172,6 @@ export const namesFooter = [
     icon: <BsPersonFillCheck size={20} />,
     variant: "outline",
     flagNameButton: true,
+    route: '/login'
   },
 ];

@@ -4,7 +4,6 @@ import React from "react";
 import { InputSearch } from "../../InputSearch";
 import { ButtonHeader } from "../ButtonHeader";
 import { names } from "../../../types/constants";
-
 interface IButtons extends ButtonProps {
   flagNameButton?: boolean;
 }
@@ -25,6 +24,7 @@ export const Buttons: React.FC<IButtons> = (props: IButtons) => {
               color={name.color}
               variant={name.variant}
               _hover={{ borderColor: "#000" }}
+              route={name.route}
             />
           </Flex>
         ))}

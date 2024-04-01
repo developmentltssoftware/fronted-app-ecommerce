@@ -47,7 +47,6 @@ export const ListPizza: React.FC = () => {
                 cust={name.price}
                 src={name.value}
               />
-              {/*  {index % 2 === 0 ? <br /> : ""} */}
             </>
           ))}
         </Flex>

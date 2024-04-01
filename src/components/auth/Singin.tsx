@@ -91,7 +91,7 @@ export const Singin: React.FC<IFormInputs> = () => {
         justifyContent={"space-evenly"}
         alignItems={"center"}
         flexDirection={"column"}
-        bgColor={"white"}
+        bgColor={"#fff"}
       >
         <Text textAlign={"center"}>
           <Text fontWeight={"bold"} fontSize={"14px"}>

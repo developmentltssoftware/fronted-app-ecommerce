@@ -11,7 +11,7 @@ import {
   Flex,
   ModalHeader,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 
 import { ImageModal } from "./ImageModal";
 
@@ -34,6 +34,7 @@ export const ModalProduct: React.FC<IModalProductProps> = ({
   onClose,
   onOpen,
   buttonLabel,
+  valueProduct,
 }: IModalProductProps) => {
   return (
     <>
@@ -43,14 +44,14 @@ export const ModalProduct: React.FC<IModalProductProps> = ({
         blockScrollOnMount={false}
         isOpen={isOpen}
         onClose={onClose}
-        size={{ xl: "xl", lg: "xl", md: "xl", sm: "md", base: "100%" }}
+        size={{ xl: "2xl", lg: "2xl", md: "2xl", sm: "md", base: "100%" }}
       >
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
           <ModalHeader></ModalHeader>
           <ModalBody
-            w={{ xl: "xl", lg: "xl", md: "xl", sm: "100%", base: "100%" }}
+            w={{ xl: "2xl", lg: "2xl", md: "2xl", sm: "100%", base: "100%" }}
           >
             <Flex
               gap={2}
@@ -71,19 +72,20 @@ export const ModalProduct: React.FC<IModalProductProps> = ({
                 w={{
                   base: "100%",
                   sm: "100%",
-                  md: "270px",
-                  lg: "270px",
-                  xl: "270px",
+                  md: "100%",
+                  lg: "100%",
+                  xl: "100%",
                 }}
               >
                 <Stack
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "270px",
-                    lg: "270px",
-                    xl: "270px",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
                   }}
+                  overflowX={"auto"}
                 >
                   <CardTitleOfProduct
                     title={"Pizza"}
@@ -107,10 +109,11 @@ export const ModalProduct: React.FC<IModalProductProps> = ({
                   w={{
                     base: "100%",
                     sm: "100%",
-                    md: "270px",
-                    lg: "270px",
-                    xl: "270px",
+                    md: "100%",
+                    lg: "100%",
+                    xl: "100%",
                   }}
+                  gap={1}
                 >
                   <ButtonIncrement
                     backgroundColor={"#f4f5f7"}
@@ -119,8 +122,13 @@ export const ModalProduct: React.FC<IModalProductProps> = ({
                     limit={1}
                   />
 
-                  <Button variant="solid" colorScheme="twitter">
-                    {buttonLabel ? buttonLabel : "Confirmar"}
+                  <Button
+                    variant="solid"
+                    colorScheme="twitter"
+                    w={200}
+                    fontSize={"14px"}
+                  >
+                    {buttonLabel ? buttonLabel : "Confirmar"} R${valueProduct}
                   </Button>
                 </ModalFooter>
               </Flex>

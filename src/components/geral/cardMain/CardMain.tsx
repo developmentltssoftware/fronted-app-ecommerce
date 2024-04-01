@@ -7,12 +7,7 @@ import {
   Image,
   Flex,
 } from "@chakra-ui/react";
-interface ICardProps extends CardProps {
-  text: string;
-  textHeading: string;
-  src?: string;
-  cust: number;
-}
+
 import pizza from "../../../assets/img/pizza.jpg";
 import cocaLata from "../../../assets/img/coca-cola-lata.png";
 import coca2l from "../../../assets/img/coca-cola-2l.jpg";
@@ -30,6 +25,12 @@ import aguaSemGas from "../../../assets/img/agua_sem_gas.jpeg";
 import spritLata from "../../../assets/img/SPRITE_LATA.jpg";
 import pastel from "../../../assets/img/pastel.jpg";
 import humburger from "../../../assets/img/humburguer.jpg";
+interface ICardProps extends CardProps {
+  text: string;
+  textHeading: string;
+  src?: string;
+  cust: number;
+}
 export const CardMain: React.FC<ICardProps> = (props: ICardProps) => {
   return (
     <Card

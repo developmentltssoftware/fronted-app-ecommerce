@@ -1,21 +1,13 @@
 import { Flex } from "@chakra-ui/react";
-import { Singin } from "../components/auth/Singin";
-import { ButtonHeader } from "../components/geral/header/ButtonHeader";
-import { names } from "../components/types/constants";
+import { ButtonHeader } from "../ButtonHeader";
+import { names } from "../../../types/constants";
 
-export const Login: React.FC = () => {
-  return (
-    <Flex
-      bgColor={"#f4f5f7"}
-      flexDirection={"column"}
-      h={"100vh"}
-      justifyContent={"space-between"}
-      align={"center"}
-    >
+export const HeaderButtonBlack: React.FC = () => {
+    return (
       <Flex
         // father of everybody element
         flexDirection={"column"}
-        gap={10}
+        gap={2}
         justifyContent={"space-between"}
         align={"center"}
         h={20}
@@ -23,8 +15,9 @@ export const Login: React.FC = () => {
         p={2}
         m={0}
         bg={"#000000"}
+        //border={"5px solid white"}
       >
-        <Flex align={"center"} gap={14} justify={"center"}>
+        <Flex align={"center"} justify={"center"} gap={14}>
           {/* flex of header */}
           {names.map((name, index) => (
             <Flex
@@ -32,6 +25,7 @@ export const Login: React.FC = () => {
               align={"center"}
               justify={"center"}
               display={{ base: "none", sm: "none", md: "flex", lg: "flex" }}
+              //border={"5px solid white"}
             >
               <ButtonHeader
                 leftIcon={name.icon}
@@ -54,7 +48,5 @@ export const Login: React.FC = () => {
           ))}
         </Flex>
       </Flex>
-      <Singin phone={""} fullname={""} />
-    </Flex>
-  );
+    );
 };

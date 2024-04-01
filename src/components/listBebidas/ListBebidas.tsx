@@ -15,7 +15,6 @@ export const ListBebidas: React.FC = () => {
         marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
         p={1}
         //border={'1px solid red'}
-        //w={'100%'}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", xl: "1200px" }}
       >
         {/* os tipos devem vir da API*/}
