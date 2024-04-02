@@ -42,9 +42,9 @@ export const ListPizza: React.FC = () => {
             <>
               <CardMain
                 key={index}
-                text={name.label}
-                textHeading={name.label}
-                cust={name.price}
+                descriptionProduct={name.label}
+                nameProduct={name.label}
+                valueProduct={name.price}
                 src={name.value}
               />
             </>

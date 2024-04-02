@@ -26,10 +26,10 @@ import spritLata from "../../../assets/img/SPRITE_LATA.jpg";
 import pastel from "../../../assets/img/pastel.jpg";
 import humburger from "../../../assets/img/humburguer.jpg";
 interface ICardProps extends CardProps {
-  text: string;
-  textHeading: string;
+  descriptionProduct: string;
+  nameProduct: string;
   src?: string;
-  cust: number;
+  valueProduct: number;
 }
 export const CardMain: React.FC<ICardProps> = (props: ICardProps) => {
   return (
@@ -50,13 +50,13 @@ export const CardMain: React.FC<ICardProps> = (props: ICardProps) => {
       //border={'1px solid red'}
     >
       <CardBody w={{ base: "400px" }}>
-        <Heading size="xs">{props.textHeading}</Heading>
+        <Heading size="xs">{props.nameProduct}</Heading>
         <Text py="2" fontSize={{ base: "xs", sm: "sm", md: "md" }}>
-          {props.text}
+          {props.descriptionProduct}
         </Text>
         <Flex gap={1} fontWeight={600} fontSize={"xs"} color={"#000"}>
           <Text>R$</Text>
-          <Text>{props.cust}</Text>
+          <Text>{props.valueProduct}</Text>
         </Flex>
       </CardBody>
       <Flex align={"center"} h={"100px"}>
@@ -65,39 +65,39 @@ export const CardMain: React.FC<ICardProps> = (props: ICardProps) => {
           maxW={{ base: "100px", sm: "80px", md: 100 }}
           maxH={{ base: "100px", sm: 60, md: 100 }}
           src={
-            props.textHeading?.includes("Pizza")
+            props.nameProduct?.includes("Pizza")
               ? `${pizza}`
-              : props.textHeading?.includes("Pastel")
+              : props.nameProduct?.includes("Pastel")
               ? `${pastel}`
-              : props.textHeading?.includes("Hambúrguer")
+              : props.nameProduct?.includes("Hambúrguer")
               ? `${humburger}`
-              : props.textHeading?.includes("Coca Cola lata")
+              : props.nameProduct?.includes("Coca Cola lata")
               ? `${cocaLata}`
-              : props.textHeading?.includes("Fanta uva lata")
+              : props.nameProduct?.includes("Fanta uva lata")
               ? `${fantaUvaLata}`
-              : props.textHeading?.includes("Fanta laranja lata")
+              : props.nameProduct?.includes("Fanta laranja lata")
               ? `${fantaLaranjaLata}`
-              : props.textHeading?.includes("Guaraná lata")
+              : props.nameProduct?.includes("Guaraná lata")
               ? `${guaranaLata}`
-              : props.textHeading?.includes("Sprit lata")
+              : props.nameProduct?.includes("Sprit lata")
               ? `${spritLata}`
-              : props.textHeading?.includes("Agua sem Gás")
+              : props.nameProduct?.includes("Agua sem Gás")
               ? `${aguaSemGas}`
-              : props.textHeading?.includes("Agua com Gás")
+              : props.nameProduct?.includes("Agua com Gás")
               ? `${aguaGas}`
-              : props.textHeading?.includes("Cajuina 2L")
+              : props.nameProduct?.includes("Cajuina 2L")
               ? `${cajuina2Litro}`
-              : props.textHeading?.includes("Fanta Laranja 2")
+              : props.nameProduct?.includes("Fanta Laranja 2")
               ? `${fantalaranjaLitro}`
-              : props.textHeading?.includes("Fanta Uva 2l")
+              : props.nameProduct?.includes("Fanta Uva 2l")
               ? `${fantauva2Litro}`
-              : props.textHeading?.includes("Guaraná 2L")
+              : props.nameProduct?.includes("Guaraná 2L")
               ? `${guaranaLitro}`
-              : props.textHeading?.includes("Coca Cola 2l")
+              : props.nameProduct?.includes("Coca Cola 2l")
               ? `${coca2l}`
-              : props.textHeading?.includes("Kuat 2l")
+              : props.nameProduct?.includes("Kuat 2l")
               ? `${kuat2l}`
-              : props.textHeading?.includes("Sprit 2l")
+              : props.nameProduct?.includes("Sprit 2l")
               ? `${sprit2l}`
               : ""
           }

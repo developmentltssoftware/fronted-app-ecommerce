@@ -10,10 +10,8 @@ export const ListPastel: React.FC = () => {
         flexDirection={"column"}
         gap={2}
         pos={"static"}
-        //top={{ xl: 0, lg: 0, md: 0, sm: 0, base: 0 }}
         mt={{ xl: 0, lg: 0, md: 0, sm: 2, base: 2 }}
         p={1}
-        mb={20}
         marginRight={{ xl: "auto", lg: "auto", md: "auto" }}
         marginLeft={{ xl: "auto", lg: "auto", md: "auto" }}
         w={{ base: "100%", sm: "100%", md: "100%", lg: "100%", xl: "1200px" }}
@@ -42,9 +40,9 @@ export const ListPastel: React.FC = () => {
             <>
               <CardMain
                 key={index}
-                text={name.label}
-                textHeading={name.label}
-                cust={name.price}
+                descriptionProduct={name.label}
+                nameProduct={name.label}
+                valueProduct={name.price}
                 src={name.value}
               />
             </>

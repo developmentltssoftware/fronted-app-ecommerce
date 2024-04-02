@@ -36,14 +36,14 @@ export const ListBebidas: React.FC = () => {
             base: "1fr",
           }}
           //border={'1px solid green'}
-          w={{xl:'fit-content', lg: 'fit-content'}}
+          w={{ xl: "fit-content", lg: "fit-content" }}
         >
           {typeBebidas.map((name, index) => (
             <CardMain
               key={index}
-              text={name.label}
-              textHeading={name.label}
-              cust={12.0}
+              descriptionProduct={name.label}
+              nameProduct={name.label}
+              valueProduct={name.price}
               src={name.value}
             />
           ))}

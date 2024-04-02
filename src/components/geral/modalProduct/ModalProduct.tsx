@@ -11,7 +11,7 @@ import {
   Flex,
   ModalHeader,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 
 import { ImageModal } from "./ImageModal";
 
