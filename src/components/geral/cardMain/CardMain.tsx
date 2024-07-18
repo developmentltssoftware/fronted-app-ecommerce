@@ -25,6 +25,7 @@ import aguaSemGas from "../../../assets/img/agua_sem_gas.jpeg";
 import spritLata from "../../../assets/img/SPRITE_LATA.jpg";
 import pastel from "../../../assets/img/pastel.jpg";
 import humburger from "../../../assets/img/humburguer.jpg";
+import { Input } from "../Input";
 interface ICardProps extends CardProps {
   descriptionProduct: string;
   nameProduct: string;
