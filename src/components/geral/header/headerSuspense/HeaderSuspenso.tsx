@@ -5,7 +5,7 @@ import { Buttons } from "./Buttons";
 import { optionslabels } from "../../../types/constants";
 interface IHeaderProps extends FlexProps {}
 
-export const HeaderSuspense: React.FC<FlexProps> = (props: IHeaderProps) => {
+export const HeaderSuspenso: React.FC<FlexProps> = (props: IHeaderProps) => {
   return (
     <Flex
       flexDirection={"row"}

@@ -1,8 +1,8 @@
 import { Flex, FlexProps } from "@chakra-ui/react";
-interface IFooterMainHomeProps extends FlexProps{
-    textFooter?: string;
+interface IFooterMainHomeProps extends FlexProps {
+  textFooter?: string;
 }
-export const FooterMainHome: React.FC<IFooterMainHomeProps> = () => {
+export const FooterComBackGroundPreto: React.FC<IFooterMainHomeProps> = () => {
   return (
     <>
       <Flex
@@ -23,7 +23,7 @@ export const FooterMainHome: React.FC<IFooterMainHomeProps> = () => {
           xl: "flex",
         }}
       >
-        Eng Danubio: contact: neander.eng@alu.ufc.br
+        LTS software - Lead Tech Software
       </Flex>
     </>
   );

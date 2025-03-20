@@ -1,20 +1,22 @@
-import { Flex, Grid } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { CardSmallOrderProduct } from "../components/geral/CardSmallOrderProduct";
 import coca from "../assets/img/coca.jpg";
 import fanta_laranja from "../assets/img/FANTA_LARANJA_250ML.jpg";
 import sprit from "../assets/img/SPRITE_LATA.jpg";
-import { FooterMainHome } from "../components/geral/footer/FooterMainHome";
-import { ListBebidas } from "../components/listBebidas/ListBebidas";
-import { ListPizza } from "../components/listPizza/ListPizza";
-import { FooterHeader } from "../components/geral/header/headerSuspense/FooterHeader";
 import { HeaderBlack } from "../components/geral/header/headerNew/HeaderBlack";
 import { FlexBag } from "../components/geral/comanda/FlexBag";
 import { useState, useEffect } from "react";
 import { HeaderSuspense } from "../components/geral/header/headerSuspense/HeaderSuspense";
 import { FlexSelect } from "../components/geral/header/FlexSelect";
-import { ListPastel } from "../components/listPastel/ListPastel";
-import { ListHumburger } from "../components/listHumburger/ListHumburger";
-import { GridHome } from "../components/gridPattern/GridHome";
+import { ListMainOfProducts } from "./home/components/ListMainOfProducts";
+import {
+  typeBebidas,
+  typeHamburguer,
+  typePastel,
+  typePizza,
+} from "../components/types/image.type";
+import { FooterOfBgColorBlack } from "../components/geral/footer/FooterOfBgColorBlack";
+import { FooterForSmallViews } from "../components/geral/header/headerSuspense/FooterForSmallViews";
 export const Test: React.FC = () => {
   const [showHeaderSuspense, setShowHeaderSuspense] = useState(false);
   useEffect(() => {
@@ -157,13 +159,25 @@ export const Test: React.FC = () => {
           bagEmpty={false}
         />
       </Flex>
-      <GridHome />
-      <ListBebidas />
-      <ListPastel />
-      <ListHumburger />
-      <ListPizza />
-      <FooterHeader />
-      <FooterMainHome />
+      {/* <ListBebidas /> */}
+      <ListMainOfProducts
+        titleListOfProducts={"Bebidas"}
+        listOfProducts={typeBebidas}
+      />
+      <ListMainOfProducts
+        titleListOfProducts={"Pastéis"}
+        listOfProducts={typePastel}
+      />
+      <ListMainOfProducts
+        titleListOfProducts={"Humbúrgueres"}
+        listOfProducts={typeHamburguer}
+      />
+      <ListMainOfProducts
+        titleListOfProducts={"Pizzas"}
+        listOfProducts={typePizza}
+      />
+      <FooterForSmallViews />
+      <FooterOfBgColorBlack />
     </Flex>
   );
 };

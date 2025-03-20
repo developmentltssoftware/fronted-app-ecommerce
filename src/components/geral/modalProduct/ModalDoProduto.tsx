@@ -22,24 +22,20 @@ import { TypeOfProduct, typeButton } from "../../types/constants";
 interface IModalProductProps extends ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onOpen: () => void;
   buttonLabel?: string;
   descriptionProduct: string;
   children: React.ReactNode;
   valueProduct: number;
   nameProduct: string;
 }
-export const ModalProduct: React.FC<IModalProductProps> = ({
+export const ModalDoProduto: React.FC<IModalProductProps> = ({
   isOpen,
   onClose,
-  onOpen,
   buttonLabel,
   valueProduct,
 }: IModalProductProps) => {
   return (
     <>
-      <Button onClick={onOpen}>Open Modal</Button>
-
       <Modal
         blockScrollOnMount={false}
         isOpen={isOpen}

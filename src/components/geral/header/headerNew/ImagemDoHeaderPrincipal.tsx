@@ -3,7 +3,7 @@ import pizzaria from "../../../../assets/img/pizza-nice.jpg";
 interface IImageProps extends ImageProps {
   label?: string;
 }
-export const ImageMain: React.FC<IImageProps> = (props: IImageProps) => {
+export const ImagemDoHeaderPrincipal: React.FC<IImageProps> = (props: IImageProps) => {
   return (
     <Image
       borderRadius={20}

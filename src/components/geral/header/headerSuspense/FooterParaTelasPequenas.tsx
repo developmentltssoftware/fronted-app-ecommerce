@@ -6,7 +6,7 @@ interface IButtons extends ButtonProps {
   flagNameButton?: boolean;
 }
 
-export const FooterHeader: React.FC<IButtons> = () => {
+export const FooterParaTelasPequenas: React.FC<IButtons> = () => {
   return (
     <>
       <Flex

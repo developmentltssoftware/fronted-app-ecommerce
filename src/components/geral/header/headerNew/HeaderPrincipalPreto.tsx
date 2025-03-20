@@ -2,12 +2,12 @@ import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { ButtonHeader } from "../ButtonHeader";
 import pizzaria from "../../../../assets/img/pizza-nice.jpg";
-import { ImageMain } from "./ImageMain";
 import { HeaderNew } from "./HeaderNew";
 import { FlexLogoSmall } from "./FlexLogoSmall";
 import { names } from "../../../types/constants";
+import { ImagemDoHeaderPrincipal } from "./ImagemDoHeaderPrincipal";
 
-export const HeaderBlack: React.FC = () => {
+export const HeaderPrincipalPreto: React.FC = () => {
   return (
     <Flex
       // father of everybody element
@@ -45,7 +45,7 @@ export const HeaderBlack: React.FC = () => {
               color={name.color}
               backgroundColor={"#000000"}
               variant={name.variant}
-              border={'none'}
+              border={"none"}
               _hover={{
                 border: "1px solid #ffffff",
                 backgroundColor: "transparent",
@@ -58,10 +58,9 @@ export const HeaderBlack: React.FC = () => {
           </Flex>
         ))}
       </Flex>
-      <ImageMain />
+      <ImagemDoHeaderPrincipal />
       <HeaderNew />
       <FlexLogoSmall />
-      
     </Flex>
   );
 };
