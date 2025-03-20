@@ -1,9 +1,17 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { typeBebidas } from "../types/image.type";
 import { CardMain } from "../geral/cardMain/CardMain";
+import api from "../services/api";
 // a API deve retornar uma lista de bebidas contendo para cada uma
 // nome, preço, descrição e imagem
 export const ListBebidas: React.FC = () => {
+  /* const handleLoadBebidas = async () => {
+    try {
+      await api.get('')
+    } catch (error) {
+      console.log(error)
+    }
+  } */
   return (
     <>
       <Flex

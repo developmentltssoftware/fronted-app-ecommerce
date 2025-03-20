@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
-import { Singin } from "../components/auth/Singin";
-import { ButtonHeader } from "../components/geral/header/ButtonHeader";
-import { names } from "../components/types/constants";
+import { names } from "../../components/types/constants";
+import { ButtonHeader } from "../../components/geral/header/ButtonHeader";
+import { Singin } from "../../components/auth/Singin";
 
 export const Login: React.FC = () => {
   return (

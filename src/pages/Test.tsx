@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Grid } from "@chakra-ui/react";
 import { CardSmallOrderProduct } from "../components/geral/CardSmallOrderProduct";
 import coca from "../assets/img/coca.jpg";
 import fanta_laranja from "../assets/img/FANTA_LARANJA_250ML.jpg";
@@ -14,6 +14,7 @@ import { HeaderSuspense } from "../components/geral/header/headerSuspense/Header
 import { FlexSelect } from "../components/geral/header/FlexSelect";
 import { ListPastel } from "../components/listPastel/ListPastel";
 import { ListHumburger } from "../components/listHumburger/ListHumburger";
+import { GridHome } from "../components/gridPattern/GridHome";
 export const Test: React.FC = () => {
   const [showHeaderSuspense, setShowHeaderSuspense] = useState(false);
   useEffect(() => {
@@ -58,6 +59,7 @@ export const Test: React.FC = () => {
       align={"center"}
       justifyContent={"space-between"}
       bgColor={"#f4f5f7"}
+      border={"1px solid red"}
     >
       {/* <Cupom
         title={""}
@@ -87,9 +89,8 @@ export const Test: React.FC = () => {
       {showHeaderSuspense && (
         <HeaderSuspense opacity={showHeaderSuspense ? "1" : "0"} />
       )}
-
       <Flex
-        //border={"1px solid red"}
+        border={"1px solid red"}
         pos={"sticky"}
         top={"85px"}
         left={"1000px"}
@@ -100,6 +101,7 @@ export const Test: React.FC = () => {
           sm: "none",
           base: "none",
         }}
+        mr={"200px"}
       >
         <FlexBag
           children={[
@@ -152,12 +154,12 @@ export const Test: React.FC = () => {
               imageProduct={sprit}
             />,
           ]}
-          bagEmpty={true}
+          bagEmpty={false}
         />
       </Flex>
-
+      <GridHome />
       <ListBebidas />
-      <ListPastel/>
+      <ListPastel />
       <ListHumburger />
       <ListPizza />
       <FooterHeader />
