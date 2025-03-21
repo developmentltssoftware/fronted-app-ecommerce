@@ -17,6 +17,7 @@ export const Buttons: React.FC<IButtons> = (props: IButtons) => {
             key={index}
             display={props.display}
             justify={"center"}
+            align={"center"}
           >
             <ButtonHeader
               leftIcon={name.icon}
