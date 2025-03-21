@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
-import { HeaderButtonBlack } from "../../components/geral/header/headerButtonBlack/HeaderButtonBlack";
+import { FooterParaTelasPequenas } from "../../components/geral/header/headerSuspense/FooterParaTelasPequenas";
+import { HeaderPretoComListaDeBotoes } from "../../components/geral/header/headerButtonBlack/HeaderPretoComListaDeBotoes";
 
 export const Promocoes: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ export const Promocoes: React.FC = () => {
       justifyContent={"space-between"}
       bgColor={"#f4f5f7"}
     >
-      <HeaderButtonBlack />
+      <HeaderPretoComListaDeBotoes />
+      <FooterParaTelasPequenas />
     </Flex>
   );
 };

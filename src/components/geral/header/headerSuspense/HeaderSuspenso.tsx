@@ -8,6 +8,8 @@ interface IHeaderProps extends FlexProps {}
 export const HeaderSuspenso: React.FC<FlexProps> = (props: IHeaderProps) => {
   return (
     <Flex
+      //border={"1px solid red"}
+      w={"100%"}
       flexDirection={"row"}
       position={"fixed"}
       zIndex={1}

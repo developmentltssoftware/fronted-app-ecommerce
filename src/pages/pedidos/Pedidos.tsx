@@ -1,7 +1,8 @@
 import { Flex, useDisclosure } from "@chakra-ui/react";
-import { HeaderButtonBlack } from "../../components/geral/header/headerButtonBlack/HeaderButtonBlack";
 import { Confirme } from "../../components/auth/Confirme";
 import { ModalDoProduto } from "../../components/geral/modalProduct/ModalDoProduto";
+import { FooterParaTelasPequenas } from "../../components/geral/header/headerSuspense/FooterParaTelasPequenas";
+import { HeaderPretoComListaDeBotoes } from "../../components/geral/header/headerButtonBlack/HeaderPretoComListaDeBotoes";
 
 export const Pedidos: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -16,7 +17,7 @@ export const Pedidos: React.FC = () => {
       justifyContent={"space-between"}
       //border={"1px solid red"}
     >
-      <HeaderButtonBlack />
+      <HeaderPretoComListaDeBotoes />
       <Confirme />
       <ModalDoProduto
         isOpen={isOpen}
@@ -26,6 +27,7 @@ export const Pedidos: React.FC = () => {
         valueProduct={12.5}
         nameProduct={"Pizza"}
       />
+      <FooterParaTelasPequenas />
     </Flex>
   );
 };

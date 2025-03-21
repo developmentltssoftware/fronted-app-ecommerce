@@ -32,7 +32,9 @@ interface ICardProps extends CardProps {
   src?: string;
   valueProduct: number;
 }
-export const CardMainOfProducts: React.FC<ICardProps> = (props: ICardProps) => {
+export const CardPrincipalDeProdutos: React.FC<ICardProps> = (
+  props: ICardProps
+) => {
   return (
     <Card
       direction={{ base: "row", sm: "row" }}
@@ -41,11 +43,12 @@ export const CardMainOfProducts: React.FC<ICardProps> = (props: ICardProps) => {
       fontFamily={"Roboto"}
       justifyContent={"space-between"}
       align={"center"}
-      p={1}
+      justify={"center"}
       _hover={{
         cursor: "pointer",
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.25)",
       }}
+      p={{ base: 2, sm: 2 }}
       maxW={{ xl: "430px", lg: "430px", md: "350px" }}
       //minW={"350px"}
       //border={'1px solid red'}
