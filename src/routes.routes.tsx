@@ -1,7 +1,4 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-import { Test } from "./pages/Test";
-
 import { Main } from "./pages/Button";
 import { Login } from "./pages/login/Login";
 import { Pedidos } from "./pages/pedidos/Pedidos";
@@ -12,7 +9,6 @@ export function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Test />} />
         <Route path="/home" element={<Home />} />
         <Route path="/promocoes" element={<Promocoes />} />
         <Route path="/pedidos" element={<Pedidos />} />n

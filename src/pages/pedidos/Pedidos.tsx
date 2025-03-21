@@ -1,7 +1,7 @@
 import { Flex, useDisclosure } from "@chakra-ui/react";
 import { HeaderButtonBlack } from "../../components/geral/header/headerButtonBlack/HeaderButtonBlack";
 import { Confirme } from "../../components/auth/Confirme";
-import { ModalProduct } from "../../components/geral/modalProduct/ModalProduct";
+import { ModalDoProduto } from "../../components/geral/modalProduct/ModalDoProduto";
 
 export const Pedidos: React.FC = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -18,9 +18,8 @@ export const Pedidos: React.FC = () => {
     >
       <HeaderButtonBlack />
       <Confirme />
-      <ModalProduct
+      <ModalDoProduto
         isOpen={isOpen}
-        onOpen={onOpen}
         onClose={onClose}
         descriptionProduct={""}
         children={undefined}

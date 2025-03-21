@@ -3,8 +3,6 @@ import { useEffect, useState } from "react";
 import { CardSmallOrderProduct } from "../../components/geral/CardSmallOrderProduct";
 import { FlexBag } from "../../components/geral/comanda/FlexBag";
 import { FlexSelect } from "../../components/geral/header/FlexSelect";
-import { HeaderBlack } from "../../components/geral/header/headerNew/HeaderBlack";
-import { HeaderSuspense } from "../../components/geral/header/headerSuspense/HeaderSuspense";
 import {
   typeBebidas,
   typePastel,
@@ -14,7 +12,6 @@ import {
 import coca from "../../assets/img/coca.jpg";
 import fanta_laranja from "../../assets/img/FANTA_LARANJA_250ML.jpg";
 import sprit from "../../assets/img/SPRITE_LATA.jpg";
-import { ModalProduct } from "../../components/geral/modalProduct/ModalProduct";
 import { ListaPrincipalDeProdutos } from "./components/ListaPrincipalDeProdutos";
 import { FooterComBackGroundPreto } from "../../components/geral/footer/FooterComBackGroundPreto";
 import { FooterParaTelasPequenas } from "../../components/geral/header/headerSuspense/FooterParaTelasPequenas";
