@@ -1,10 +1,8 @@
-import { Flex, useDisclosure } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { CardSmallOrderProduct } from "../../components/geral/CardSmallOrderProduct";
 import { FlexBag } from "../../components/geral/comanda/FlexBag";
 import { FlexSelect } from "../../components/geral/header/FlexSelect";
-import { HeaderBlack } from "../../components/geral/header/headerNew/HeaderBlack";
-import { HeaderSuspense } from "../../components/geral/header/headerSuspense/HeaderSuspense";
 import {
   typeBebidas,
   typePastel,
@@ -14,13 +12,11 @@ import {
 import coca from "../../assets/img/coca.jpg";
 import fanta_laranja from "../../assets/img/FANTA_LARANJA_250ML.jpg";
 import sprit from "../../assets/img/SPRITE_LATA.jpg";
-import { ModalProduct } from "../../components/geral/modalProduct/ModalProduct";
 import { ListaPrincipalDeProdutos } from "./components/ListaPrincipalDeProdutos";
 import { FooterComBackGroundPreto } from "../../components/geral/footer/FooterComBackGroundPreto";
 import { FooterParaTelasPequenas } from "../../components/geral/header/headerSuspense/FooterParaTelasPequenas";
 import { HeaderSuspenso } from "../../components/geral/header/headerSuspense/HeaderSuspenso";
 import { HeaderPrincipalPreto } from "../../components/geral/header/headerNew/HeaderPrincipalPreto";
-import { ModalDoProduto } from "../../components/geral/modalProduct/ModalDoProduto";
 
 export const Home: React.FC = () => {
   const [dataDrinks, setDataDrinks] = useState();
@@ -59,7 +55,7 @@ export const Home: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
     <Flex
       flexDirection={"column"}
@@ -104,8 +100,9 @@ export const Home: React.FC = () => {
         top={"85px"}
         left={"1000px"}
         display={{
-          xl: "flex",
-          lg: "flex",
+          "2xl": "flex",
+          xl: "none",
+          lg: "none",
           md: "none",
           sm: "none",
           base: "none",
@@ -189,14 +186,6 @@ export const Home: React.FC = () => {
       <Flex w={"100%"} mt={10} flexDir={"column"}>
         <FooterComBackGroundPreto />
       </Flex>
-      <ModalDoProduto
-        isOpen={false}
-        onClose={onClose}
-        descriptionProduct={""}
-        children={undefined}
-        valueProduct={0}
-        nameProduct={"Pizza"}
-      />
     </Flex>
   );
 };

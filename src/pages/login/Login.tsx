@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import { names } from "../../components/types/constants";
 import { ButtonHeader } from "../../components/geral/header/ButtonHeader";
 import { Singin } from "../../components/auth/Singin";
+import { FooterParaTelasPequenas } from "../../components/geral/header/headerSuspense/FooterParaTelasPequenas";
 
 export const Login: React.FC = () => {
   return (
@@ -55,6 +56,7 @@ export const Login: React.FC = () => {
         </Flex>
       </Flex>
       <Singin phone={""} fullname={""} />
+      <FooterParaTelasPequenas />
     </Flex>
   );
 };

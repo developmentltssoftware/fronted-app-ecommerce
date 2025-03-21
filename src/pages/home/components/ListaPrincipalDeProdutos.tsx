@@ -1,5 +1,6 @@
-import { Flex, Text } from "@chakra-ui/react";
-import { CardMainOfProducts } from "../../../components/geral/cardMain/CardMainOfProducts";
+import { Flex, Text, useDisclosure } from "@chakra-ui/react";
+import { CardPrincipalDeProdutos } from "../../../components/geral/cardMain/CardPrincipalDeProdutos";
+import { ModalDoProduto } from "../../../components/geral/modalProduct/ModalDoProduto";
 interface IProps {
   tituloDaListaDeProdutos: string;
   listaDeProdutos: { label: string; value: string; price: number }[];
@@ -8,6 +9,7 @@ export const ListaPrincipalDeProdutos: React.FC<IProps> = ({
   tituloDaListaDeProdutos,
   listaDeProdutos,
 }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Flex
@@ -43,12 +45,20 @@ export const ListaPrincipalDeProdutos: React.FC<IProps> = ({
         >
           {listaDeProdutos.map((name, index) => (
             <>
-              <CardMainOfProducts
+              <CardPrincipalDeProdutos
                 key={index}
                 descriptionProduct={name.label}
                 nameProduct={name.label}
                 valueProduct={name.price}
                 src={name.value}
+              />
+              <ModalDoProduto
+                isOpen={false}
+                onClose={onClose}
+                descriptionProduct={""}
+                children={undefined}
+                valueProduct={0}
+                nameProduct={"Pizza"}
               />
             </>
           ))}
